@@ -1,30 +1,14 @@
-/**
- * Shared common options for both ESBuild and Vite
- */
-export const packageOptions = {
-  parser: {
-    name: 'mermaid-parser',
-    packageName: 'parser',
-    file: 'index.ts',
-  },
-  mermaid: {
-    name: 'mermaid',
-    packageName: 'mermaid',
-    file: 'mermaid.ts',
-  },
-  'mermaid-example-diagram': {
-    name: 'mermaid-example-diagram',
-    packageName: 'mermaid-example-diagram',
-    file: 'detector.ts',
-  },
-  'mermaid-zenuml': {
-    name: 'mermaid-zenuml',
-    packageName: 'mermaid-zenuml',
-    file: 'detector.ts',
-  },
-  'mermaid-flowchart-elk': {
-    name: 'mermaid-flowchart-elk',
-    packageName: 'mermaid-flowchart-elk',
-    file: 'detector.ts',
-  },
-} as const;
+graph TD
+    A[Aplicaciones Web y Móviles] -->|Azure App Services| B[Registro y Seguimiento]
+    A -->|Azure Functions| C[Eventos y Procesos Automatizados]
+    B -->|Azure SQL Database| D[Datos de Registro de Vacunados y Reportes de Efectos Secundarios]
+    B -->|Azure Cosmos DB| E[Datos No Relacionales (Comunicación y Notificaciones)]
+    C -->|Azure Monitor y Application Insights| F[Rendimiento y Disponibilidad]
+    C -->|Azure Stream Analytics| G[Análisis en Tiempo Real]
+    D -->|Cifrado SSL/TLS| H[Transmisión de Datos Segura]
+    D -->|Cifrado de Datos en Reposo| I[Seguridad de Datos Almacenados]
+    F -->|Auditorías Regulares| J[Integridad del Sistema]
+    F -->|Pruebas de Penetración| K[Seguridad y Cumplimiento]
+    G -->|Logística de Distribución| L[Efectos Secundarios]
+    H -->|Autenticación Multifactor (MFA)| M[Acceso a la Plataforma]
+    I -->|Auditorías y Pruebas de Seguridad| N[Seguridad y Cumplimiento]
